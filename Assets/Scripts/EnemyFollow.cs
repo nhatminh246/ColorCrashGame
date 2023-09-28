@@ -5,9 +5,11 @@ using UnityEngine;
 public class EnemyFollow : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private float  stopDistance,speedRotation;
-    public float speed;
-    private Transform target;
+
+    [SerializeField] float stopDistance;
+    [SerializeField] float speedRotation;
+    [SerializeField]  public float speed;
+    [SerializeField]  public Transform target;
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();

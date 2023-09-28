@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 using UnityEngine.SceneManagement;
 
 public enum Screens
@@ -13,13 +15,21 @@ public enum Screens
 public class ScreensManager : MonoBehaviour
 {
     public static ScreensManager Instance;
-
     public GameObject currentScreen;
-
+    [Header("MainMenuPanel")]
     public GameObject mainMenuPanel;
+    public Text hightScore;
+
+    [Header("InGamePanel")]
     public GameObject gamePanel;
+
+    [Header("DiePanel")]
     public GameObject diePanel;
-    public GameObject pausePanel;
+    public Text score;
+    public Text resultHightScore;
+
+
+    [Header("Transition")]
     public GameObject fadeScreen;
     public Animator animatorFade;
 
@@ -37,17 +47,19 @@ public class ScreensManager : MonoBehaviour
         {
             case Screens.MAIN_MENU:
                 animatorFade.SetBool("isFade",true);
+                hightScore.text = "Hight score: " + HightScore.Instance.GetHightScore();
                 currentScreen = mainMenuPanel;
                 
                 break;
             case Screens.IN_GAME:
                 currentScreen = gamePanel;
                 break;
-            case Screens.PAUSE_GAME:
-                currentScreen = pausePanel;
-                break;
             case Screens.END_GAME:
                 currentScreen = diePanel;
+                score.text = "Score:" + HightScore.Instance.GetScore();
+                resultHightScore.text = "Hight score: " + HightScore.Instance.GetHightScore();
+
+
                 break;
         }
         currentScreen.SetActive(true);

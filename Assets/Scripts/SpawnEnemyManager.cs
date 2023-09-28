@@ -6,14 +6,17 @@ using UnityEngine.UI;
 
 public class SpawnEnemyManager : MonoBehaviour
 {
-
+    [Header("EnemySpawnComponents")]
     [SerializeField] private float cooldownSpawnEnemy, waitTime, distanSpawn, rangeSpawn;
     [SerializeField] private int spawned, lowestCountEnemyCanSpawnInATurn, maxCountEnemyCanSpawnInATurn, maxEnemyScreen;
     [SerializeField] private GameObject[] enemyPrefab;
     [SerializeField] private Text waveText;
-    private GameObject player;
     private Transform enemyTotal;
     private float spawnRadius;
+
+    [Header("Player")]
+    private GameObject player;
+    
 
 
     // Start is called before the first frame update

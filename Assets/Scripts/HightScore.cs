@@ -20,39 +20,43 @@ public class HightScore : MonoBehaviour
     }
 
     // Update is called once per frame
-    public  void ShowScoreAndHightScoreDieScreen()
-    {
-        int score = (PlayerPrefs.GetInt("Score"));
-        scoreText.text = "Score: " + score ;
-        int hightScore = (PlayerPrefs.GetInt("HightScore"));
-        if (score > hightScore) { 
-            PlayerPrefs.SetInt("HightScore", score);
-            hightScore = score;
-        }
-        hightScoreText.text = "HightScore: " + hightScore;
-        //PlayerPrefs.SetInt("Score", 0);
-        //PlayerPrefs.SetInt("HightScore", 0);
+    //public  void ShowScoreAndHightScoreDieScreen()
+    //{
+    //    int score = (PlayerPrefs.GetInt("Score"));
+    //    scoreText.text = "Score: " + score ;
+    //    int hightScore = (PlayerPrefs.GetInt("HightScore"));
+    //    if (score > hightScore) { 
+    //        PlayerPrefs.SetInt("HightScore", score);
+    //        hightScore = score;
+    //    }
+    //    hightScoreText.text = "HightScore: " + hightScore;
+    //    //PlayerPrefs.SetInt("Score", 0);
+    //    //PlayerPrefs.SetInt("HightScore", 0);
 
-    }
+    //}
     public void ResetScore()
     {
         PlayerPrefs.SetInt("Score", 0);
     }
     public void ResetHightScore()
     {
-        PlayerPrefs.SetInt("HightScore", 0);
-        ShowHightScore(hightScoreDefaulScreenText);
+        PlayerPrefs.SetInt("HightScore", 0);    }
+    public int GetScore()
+    {
+        return PlayerPrefs.GetInt("Score");
     }
-    public void ShowScore(Text scoreText)
+    public int GetHightScore()
     {
         int score = (PlayerPrefs.GetInt("Score"));
-        scoreText.text = "Score: " + score;
-    }
-    public void ShowHightScore(Text hightScoreText)
-    {
         int hightScore = (PlayerPrefs.GetInt("HightScore"));
-        hightScoreText.text = "HightScore: " + hightScore;
 
+        if (score > hightScore)
+        {
+            PlayerPrefs.SetInt("HightScore", score);
+            hightScore = score;
+
+        }
+        return hightScore;
 
     }
 }

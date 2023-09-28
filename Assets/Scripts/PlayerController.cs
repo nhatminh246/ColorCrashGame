@@ -7,14 +7,17 @@ using UnityEngine.EventSystems;
 public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private float power = 10f;
-    private Rigidbody2D rb;
 
+    [Header("ForceVector")]
     [SerializeField ] private Vector2 minPower;
     [SerializeField] private Vector2 maxPower;
-    [SerializeField] private GameObject rayLine;
+    [SerializeField] private float power = 10f;
+    [SerializeField] private GameObject rayLine;    
+    
 
-    Camera cam;
+    [Header("")]
+    Camera cam;    
+    private Rigidbody2D rb;
     private Vector2 force;
     private Vector2 startPoint;
     private Vector2 direcPoint;
@@ -66,8 +69,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0) && ScreensManager.Instance.currentScreen == ScreensManager.Instance.gamePanel)
         {
-            AudioClip shoot = SoundsManager.Instance.shoot;
-            SoundsManager.Instance.audioSource.PlayOneShot(shoot);
+            SoundsManager.Instance.PlayOneShotAudioShoot();
             Shoot();
         }
 
