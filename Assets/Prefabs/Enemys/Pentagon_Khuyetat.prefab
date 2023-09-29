@@ -26,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2522082205842415015}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.6511187, w: 0.7589759}
   m_LocalPosition: {x: -5.22, y: -2.326, z: 0}
   m_LocalScale: {x: 1.7071434, y: 1.3997856, z: 1.0097144}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6851121674164700943}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 81.252}
 --- !u!212 &61314988641591089
 SpriteRenderer:
@@ -103,6 +103,12 @@ Rigidbody2D:
   m_AngularDrag: 3
   m_GravityScale: 0
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -117,6 +123,25 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -159,13 +184,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3306408529417606585}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: 0.91915953, w: -0.39388564}
   m_LocalPosition: {x: 5.3510103, y: -2.0920005, z: 0}
   m_LocalScale: {x: 1.7425, y: 1.416643, z: 1.0097144}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6851121674164700943}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 226.393}
 --- !u!212 &2477784139962248612
 SpriteRenderer:
@@ -207,7 +232,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -1767418863, guid: c968507c097594c48b7b874031dcbab7, type: 3}
   m_Color: {r: 0.49693838, g: 0.8867924, b: 0.6006757, a: 1}
   m_FlipX: 0
@@ -236,6 +261,12 @@ Rigidbody2D:
   m_AngularDrag: 3
   m_GravityScale: 0
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -250,6 +281,25 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -292,13 +342,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4071142998212706160}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.9733793, w: 0.2292004}
   m_LocalPosition: {x: 0.12, y: -6.194, z: 0}
   m_LocalScale: {x: 1.6778004, y: 1.3768831, z: 1.0097144}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6851121674164700943}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 153.5}
 --- !u!212 &3431753360527016196
 SpriteRenderer:
@@ -340,7 +390,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1767418863, guid: c968507c097594c48b7b874031dcbab7, type: 3}
   m_Color: {r: 1, g: 0.54543155, b: 0.48490566, a: 1}
   m_FlipX: 0
@@ -369,6 +419,12 @@ Rigidbody2D:
   m_AngularDrag: 3
   m_GravityScale: 0
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -383,6 +439,25 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -427,6 +502,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5623457470696086262}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.38, y: -2.09, z: 0}
   m_LocalScale: {x: 0.14, y: 0.14, z: 0.14}
@@ -438,7 +514,6 @@ Transform:
   - {fileID: 2445844258231207552}
   - {fileID: 2490750585929734945}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4559885564952151607
 SpriteRenderer:
@@ -504,9 +579,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcae7ecb32f5cea47aa64756d7117786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
   stopDistance: 1
   speedRotation: 0
+  speed: 1
+  target: {fileID: 0}
 --- !u!50 &1703436956299861815
 Rigidbody2D:
   serializedVersion: 4
@@ -524,6 +600,12 @@ Rigidbody2D:
   m_AngularDrag: 3
   m_GravityScale: 0
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -561,6 +643,25 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -603,13 +704,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5637455136691781288}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.09115404, w: 0.99583685}
   m_LocalPosition: {x: -3.337, y: 4.0420094, z: 0}
   m_LocalScale: {x: 1.6441308, y: 1.3854285, z: 1.0097144}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6851121674164700943}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10.46}
 --- !u!212 &3393642811263241437
 SpriteRenderer:
@@ -651,7 +752,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -1767418863, guid: c968507c097594c48b7b874031dcbab7, type: 3}
   m_Color: {r: 0.53207546, g: 1, b: 0.6778008, a: 1}
   m_FlipX: 0
@@ -680,6 +781,12 @@ Rigidbody2D:
   m_AngularDrag: 3
   m_GravityScale: 0
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -694,6 +801,25 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -737,13 +863,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7077657829994623000}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.50497955, w: 0.86313134}
   m_LocalPosition: {x: 3.199, y: 4.152, z: 0}
   m_LocalScale: {x: 1.6862118, y: 1.3582716, z: 1.0097144}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6851121674164700943}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -60.66}
 --- !u!212 &6033048918806962137
 SpriteRenderer:
@@ -785,7 +911,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1767418863, guid: c968507c097594c48b7b874031dcbab7, type: 3}
   m_Color: {r: 0.73347735, g: 0, b: 0.9245283, a: 1}
   m_FlipX: 0
@@ -814,6 +940,12 @@ Rigidbody2D:
   m_AngularDrag: 3
   m_GravityScale: 0
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -828,6 +960,25 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

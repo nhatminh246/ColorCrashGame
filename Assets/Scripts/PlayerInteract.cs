@@ -51,6 +51,7 @@ public class PlayerInteract : MonoBehaviour
         ScreensManager.Instance.ChangeScreen(Screens.END_GAME);
         rb.AddForce((-transform.up - new Vector3(0, Random.Range(0.3f, 0.3f), 0)) * 10, ForceMode2D.Impulse);
         Camera.main.transform.GetComponent<CameraFollow>().enabled = false;
+            transform.GetComponent<Collider2D>().enabled = false;
         for (int i = 0; i < enemyTotal.transform.childCount; i++)
         {
             GameObject enemy = enemyTotal.transform.GetChild(i).gameObject;
